@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Francesca Polotan</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="projects.html">Projects</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Projects</h2>
+							<p>Some of the work I've done</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>PLC PROGRAMS</h3>
+
+								<div class="box alt">
+										<div class="row uniform 50%">
+											<div class="4u"><span class="image fit"><img src="images/PLC/PLC.jpg" alt="" /></span></div>
+								</div>
+
+									<blockquote>A programmable logic controller, PLC, or programmable controller is a digital computer used for automation of typically industrial electromechanical processes, such as control of machinery on factory assembly lines, amusement rides, or light fixtures. PLCs are used in many machines, in many industries. PLCs are designed for multiple arrangements of digital and analog inputs and outputs, extended temperature ranges, immunity to electrical noise, and resistance to vibration and impact. Programs to control machine operation are typically stored in battery-backed-up or non-volatile memory. A PLC is an example of a "hard" real-time system since output results must be produced in response to input conditions within a limited time, otherwise unintended operation will result.</blockquote>
+
+								<p>The three programs below were written during my internship at <a href="http://www.lvscontrols.com">LVS Inc.</a> using the software Zelio Soft V2.0 from Schneider Electric. It was programmed for a Zelio Logic 2 Module with 16 inputs, 10 outputs, and 24V DC.</p>
+
+								<h2>Three-Digit Combination Lock</h2>
+								<p>This is the first PLC program I've written using ladder logic programming. The combination for this specific program is a simple "1, 2, 3" and it was programmed using timers, the 4 pushbuttons on the PLC, and latching coil relays.</p>
+
+								<div class="box alt">
+										<div class="row uniform 50%">
+											<div class="12u"><span class="image fit"><img src="images/PLC/3LC_1.png" alt="" /></span></div>
+											<div class="12u"><span class="image fit"><img src="images/PLC/3LC_2.png" alt="" /></span></div>
+										</div>
+									</div>
+
+								<hr />
+
+								<h2>Five-Digit Combination Lock</h2>
+								<p>Building upon my last program, I was able to add counters in this program to check for multiple "button pushes". However, instead of using the four buttons on the front of the PLC, I experimented with using discrete outputs.</p>
+
+								<div class="box alt">
+										<div class="row uniform 50%">
+											<div class="12u"><span class="image fit"><img src="images/PLC/5LC_1.png" alt="" /></span></div>
+											<div class="12u"><span class="image fit"><img src="images/PLC/5LC_2.png" alt="" /></span></div>
+											<div class="12u"><span class="image fit"><img src="images/PLC/5LC_3.png" alt="" /></span></div>
+											<div class="12u"><span class="image fit"><img src="images/PLC/5LC_4.png" alt="" /></span></div>
+											<div class="12u"><span class="image fit"><img src="images/PLC/5LC_5.png" alt="" /></span></div>
+											<div class="12u"><span class="image fit"><img src="images/PLC/5LC_6.png" alt="" /></span></div>
+										</div>
+									</div>
+
+								<hr />
+
+								<h2>Simplified Panama Canal Lock System</h2>
+
+								<div class="box alt">
+										<div class="row uniform 50%">
+											<div class="4u"><span class="image fit"><img src="images/PLC/Panama-Canal-Locks-Animation.gif" alt="" /></span></div>
+								</div>
+								<br>
+								<p>This is a simplified algorithm for the <a href="https://en.wikipedia.org/wiki/Panama_Canal_locks">Panama Canal lock system</a>. In this program we don't account for the <a href="https://en.wikipedia.org/wiki/Panama_Canal_locks#Mules">mules</a> that normally guide the ship through the canal and we assume that the ship continuously moves forward without any problems. Through this program I was able to learn about simulating a motor and different sensors for the PLC including limit switches and liquid level switches.</p>
+
+								<p>I really enjoyed writing the program for this one. I did a lot of research including watching a documentary about the Panama Canal lock system, and even reading a <a href="http://calhoun.nps.edu/bitstream/handle/10945/16446/algorithmforsche00norm.pdf?sequence=1">dissertation</a> written in 1973 for the algorithm of the scheduling of vessels through the Panama Canal.</p>
+
+								<p>I've written it in two parts, as I didn't have enough discrete inputs to account for the two-way travel.</p>
+
+								<h3>Part 1</h3>
+								<p>From the Pacific Ocean to Gatun Lake</p>
+
+								<div class="box alt">
+										<div class="row uniform 50%">
+											<div class="12u"><span class="image fit"><img src="images/PLC/PC_1.png" alt="" /></span></div>
+										</div>
+									</div>
+
+								<h3>Part 2</h3>
+								<p>From Gatun Lake to the Atlantic Ocean</p>
+
+								<div class="box alt">
+										<div class="row uniform 50%">
+											<div class="12u"><span class="image fit"><img src="images/PLC/PC_1.png" alt="" /></span></div>
+										</div>
+									</div>
+
+								<hr>
+
+								<h3>CHAT BOTS 🤖</h3>
+								<div class="box alt">
+										<div class="row uniform 50%">
+											<div class="12u"><span class="image fit"><img src="images/chatbots/samcatsu.jpg" alt="" /></span></div>
+										</div>
+									</div>
+								<h4>Sam Catsu</h4>
+								<p>A c(h)at bot in the works!</p>
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
